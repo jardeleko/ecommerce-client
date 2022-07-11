@@ -103,7 +103,7 @@ const Login = () => {
         <Container>
             <Wrapper>
                 <Title>SIGN IN </Title>
-                <Form className='form-group' netlify netlify-honeypot="bot-field" hidden>
+                <Form name='signin' className='form-group' netlify netlify-honeypot="bot-field" hidden>
                     <Input className='form-control' placeholder="username" type="text" onChange={(e) => setUsername(e.target.value)}/>
                     <Input className='form-control' placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)}/>
                     <Button onClick={handleLogin} >LOGIN</Button>
