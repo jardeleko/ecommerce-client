@@ -121,7 +121,7 @@ const Register = () => {
         <Container>
             <Wrapper>
                 <Title>CREATE ACCOUNT</Title>
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} data-netlify="true">
                     <Div>
                         <Input placeholder="name" type='text' onChange={(e) => setName(e.target.value)}/>
                         <Input placeholder="email" type="email" onChange={(e) => setEmail(e.target.value)}/>
