@@ -183,7 +183,7 @@ const User = () => {
                         
                         <div className="userUpdate">
                             <span className="userUpdateTitle">Update Credentials</span>
-                            <form className="userUpdateForm">
+                            <form className="userUpdateForm" data-netlify="true">
                                 <div className="userUpdateLeft">
                                     <div className="userUpdateItem">
                                         <label>Full Name</label>
