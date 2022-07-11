@@ -1,0 +1,387 @@
+* {
+    border-left: 10px;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+  }
+  a{
+    
+    color: #fff !important;
+  }
+  /* visited link */
+  a:visited {
+    color: rgb(247, 231, 162);
+  }
+  /* mouse over link */
+  a:hover {
+      color: rgb(221, 223, 135);
+  }
+  /* selected link */
+  a:active {
+    color: greenyellow;
+  }
+  .navbar{
+    background-color: #494a49;
+    /* background: #65857e; */
+    /* background-image: linear-gradient(to right top, #a8bde1, #a69fc0, #9c849b, #8a6d77, #715858); */
+  }
+  .nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fec400;
+    transition: 0.4s
+  }
+  .nav-item:hover::after {
+      width: 100%
+  }
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+      color: #000000
+  }
+  .dropdown-menu{
+    background-color: #494a49;
+   }
+  .dropdown-item{
+    text-decoration: none;
+  }
+  .dropdown-item:hover {
+    background: transparent;
+    text-decoration: underline;
+    text-decoration-color: #fec400;
+    color: #fff;
+  }
+  .nav-link {
+      padding: 25px 5px;
+      transition: 0.2s
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+  .form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+  }
+  .form-content .form-items {
+    border: 3px solid rgb(87, 87, 87);
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .form-content h3 {
+    color: rgb(0, 0, 0);;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .form-content h3.form-title {
+      margin-bottom: 30px;
+  }
+  .form-content p {
+      color: rgb(0, 0, 0);;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 30px;
+  }
+  .form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+      color: rgb(0, 0, 0);
+      justify-content: space-between;
+      margin:10px;
+  }
+  .form-content-1 input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+      width: 100%;
+      padding: 9px 20px;
+      text-align: left;
+      border: 0;
+      outline: 0;
+      border-radius: 6px;
+      background-color: rgb(247, 231, 162);
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      margin-top: 16px;
+  }
+  .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+      width: 100%;
+      padding: 9px 20px;
+      text-align: left;
+      align-items: justify;
+      justify-content: justify;
+      border: 0;
+      outline: 0;
+      border-radius: 6px;
+      background-color: rgb(247, 231, 162);
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      margin-top: 16px;
+  }
+.userUpdateUpload{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.userUpdateImage{
+    width: 100px;
+    height: 100px;border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.updateIcon{
+  display: calc(1);
+
+}
+
+.user{
+  flex: 4;
+  padding: 20px;
+}
+.userTitleContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userTitle{
+  font-size: 20px;
+}
+.userAddButton{
+  width: 80px;
+  border:none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(-180deg, #055069, #019196);
+  color: white;
+  cursor: pointer;
+}
+.userAddButton:hover, 
+.userUpdateButton:hover{
+  opacity: 0.8;
+}
+
+.userContainer{
+  display: flex;
+  margin-top: 20px;
+}
+.userShow{
+  flex: 1;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 11px -1px #c5c3c3; 
+  box-shadow: 0px 0px 11px -1px #c5c3c3;
+  margin-right: 30px;
+
+}
+.userUpdate{
+  flex: 2;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 11px -1px #c5c3c3; 
+  box-shadow: 0px 0px 11px -1px #c5c3c3;
+}
+.userShowTop{
+  display: flex;
+  align-items: center;
+}
+.userShowImg{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userShowTopTitle{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.userShowUsername{
+  font-weight: 600;
+}
+.userShowUserTitle{
+  font-weight: 300;
+}
+.userShowBottom{
+  margin-top: 20px;
+}
+.userShowTitle{
+  font-size: 18px;
+  font-weight: 600;
+  color:rgb(153, 153, 153);
+}
+.userShowInfo{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color:#444;
+}
+.userShowInfoTitle{
+  margin-left: 10px;
+}
+
+.userShowIcon{
+  font-size: 16px !important;
+}
+
+.userUpdateTitle{
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.userUpdateForm{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.userUpdateItem{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.userUpdateItem>label{
+  margin-bottom: 5px;
+  border-radius: 1px;
+  font-size: 15px;
+}
+.userUpdateInput{
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
+.userUpdateRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userUpdateUpload{
+  display: flex;
+  align-items: center;
+}
+.userUpdateImage{
+  width: 100px;
+  height: 100px;border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.userUpdateButton{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  background: linear-gradient(-180deg, #055069, #019196);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.updateIcon{
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+  .userContainer{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .userUpdate, .userShow{
+      margin-right: 100px;
+  }
+}
+
+.styledButtons{
+  margin-top: 10px;
+  border-bottom: 0px;
+}
+
+.staticBtn{
+  margin-left:10px;
+  background-color:#24a0ed;
+  padding:6px;
+  border-radius:4px;
+  color:white;
+  border:none;
+  font-weight: 400;
+}
+.staticBtn:hover{
+  background-color: #1a83c4 !important;
+}
+
+.widgetLgButton{
+  margin-left:10px; 
+  padding:6px; 
+  border-radius:4px; 
+  color:white; 
+  border:none; 
+  font-weight: 400;
+  cursor: none;
+}
+
+.widgetLgButton.approved{
+  background-color: rgb(61, 148, 61);
+  color:white;
+  cursor: none ;
+}
+.widgetLgButton.declined{
+  background-color: rgb(201, 55, 55);
+  color:white;
+}
+.widgetLgButton.declined:hover{
+  background-color: rgb(192, 37, 37);
+  color:white;
+}
+.widgetLgButton.pending{
+  background-color: rgb(255, 223, 79);
+  color:rgb(66, 66, 66);
+}
+
+@media(max-width:350px) {
+  .userContainer{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .userUpdate, .userShow{
+      width: 100%;
+      margin-right: 100px;
+  }
+}
