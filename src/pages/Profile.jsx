@@ -183,7 +183,7 @@ const User = () => {
                         
                         <div className="userUpdate">
                             <span className="userUpdateTitle">Update Credentials</span>
-                            <form className="userUpdateForm" netlify netlify-honeypot="bot-field" hidden>
+                            <form name='profile' className="userUpdateForm" netlify netlify-honeypot="bot-field" hidden>
                                 <div className="userUpdateLeft">
                                     <div className="userUpdateItem">
                                         <label>Full Name</label>
