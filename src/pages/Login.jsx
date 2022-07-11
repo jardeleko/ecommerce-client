@@ -103,7 +103,7 @@ const Login = () => {
         <Container>
             <Wrapper>
                 <Title>SIGN IN </Title>
-                <Form className='form-group'>
+                <Form className='form-group' data-netlify="true">
                     <Input className='form-control' placeholder="username" type="text" onChange={(e) => setUsername(e.target.value)}/>
                     <Input className='form-control' placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)}/>
                     <Button onClick={handleLogin} >LOGIN</Button>
